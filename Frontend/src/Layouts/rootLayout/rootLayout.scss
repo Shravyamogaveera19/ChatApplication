@@ -1,0 +1,25 @@
+.rootLayout{
+    padding:16px 64px;
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display:flex;
+            align-items: center;
+            gap:10px;
+            font-weight: bold;
+            img{
+                height:32px;
+                width:32px;
+            }
+        }
+    }
+    main{
+        flex:1;
+        overflow:hidden;
+    }
+}
