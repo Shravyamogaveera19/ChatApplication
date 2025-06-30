@@ -1,7 +1,11 @@
 import './rootLayout.scss';
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, Link,useNavigate } from 'react-router-dom'
+import { MdLogout } from "react-icons/md";
 
 const RootLayout = () => {
+  const isDashBoard = window.location.href.includes('/dashboard');
+   const navigate = useNavigate();
+
   return (
     <div className='rootLayout'>
         <header>
@@ -10,11 +14,14 @@ const RootLayout = () => {
                 <span>CHAT AI</span>
             </Link>
             <div className="user">
-                <button>
-                    <Link to='dashboard'>
-                    USER
-                    </Link>
-                </button>
+            { isDashBoard?
+                (
+                   <MdLogout className='logout-button'/> 
+                ):
+                (<button onClick={() => navigate('/signin')}>
+                    Sign In
+                </button>)
+            }
             </div>
         </header>
         <main>

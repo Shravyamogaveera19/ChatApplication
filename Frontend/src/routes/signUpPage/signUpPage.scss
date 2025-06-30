@@ -1,0 +1,75 @@
+.SignUpContainer{
+    position:absolute;
+    top:20%;
+    left:38%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:500px;
+    width:400px;
+    border-radius: 10px;
+    background-color: rgb(254, 253, 253);
+
+    .SignIn-Page{
+    flex:3;
+    color:black;
+    padding:40px;
+    justify-content: space-between;
+
+    .SignIn-Info{
+        font-size: 20px;
+        font-weight:700;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        margin-bottom: 20px;
+        p{
+            font-size: 14px;
+            color: rgb(185, 182, 182);
+        }
+    }
+    .credentials{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+
+        button{
+            background-color: black;
+            color:white;
+            font-weight: bold;
+            height:40px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        p{
+            color:rgb(155, 152, 152);
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input{
+            height:35px;
+            margin-top: 5px;
+            width:90%;
+            font-size: 12px;
+            font-weight: 100;
+        }
+    }
+    } 
+    .SignUpLink{
+       flex:1;
+       background-color: rgb(228, 230, 230);
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       color: gray;
+       padding:10px;
+       border-radius: 10px;
+
+       .linkforSignUp{
+        font-weight: 600;
+        color: black;
+       }
+    }
+}

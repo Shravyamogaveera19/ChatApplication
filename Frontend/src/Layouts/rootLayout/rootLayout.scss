@@ -17,6 +17,27 @@
                 width:32px;
             }
         }
+        .user{
+            button{
+                border-radius: 10px;
+                height:40px;
+                width:80px;
+                padding:5px;
+                font-size: 16px;
+                background: linear-gradient(to right, rgb(107, 101, 107),rgb(232, 226, 227));
+                font-weight: bold;
+                color:black;
+                cursor:pointer;
+                border:1px solid white;
+                &:hover{
+                   background: linear-gradient(to right, rgb(232, 226, 227),rgb(132, 126, 132));
+                }
+            }
+             .logout-button{
+                    font-size: 26px;
+            }
+
+        }
     }
     main{
         flex:1;

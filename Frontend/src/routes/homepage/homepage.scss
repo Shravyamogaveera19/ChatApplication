@@ -1,15 +1,21 @@
-.Hometext{
-    font-size: 60px;
-    font-weight: bold;
-    color: white;
-    position:absolute;
-    top:40%;
-    left:25%;
-    opacity:70%;
-    z-index: 1000;
+.Hometext {
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 1000;
+  .Info {
+
+    background: linear-gradient(to right, #890693, rgb(241, 169, 216), #3055db);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     p{
-        font-size: 50px;
-        position:absolute;
-        left:25%;
+        font-size: 40px;
+        display:flex;
+        justify-content: center;
     }
+  }
 }
